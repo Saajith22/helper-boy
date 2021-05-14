@@ -1,0 +1,15 @@
+{
+  "name": "helper-boy",
+  "version": "1.0.9",
+  "description": "A really useful discord.js package for all users and all purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "!test"
+  },
+  "author": "saajith",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "mongoose": "^5.12.9"
+  }
+}
