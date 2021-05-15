@@ -27,5 +27,3 @@ const { helper } = require('helper-boy');
 
 helper.Mongodb('mongodb-uri');
 ```
-
-###### Github => https://github.com/Saajith22/helper-boy/tree/main
