@@ -1,6 +1,6 @@
 {
   "name": "helper-boy",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A really useful discord.js package for all users and all purposes",
   "main": "index.js",
   "scripts": {
