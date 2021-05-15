@@ -6,8 +6,16 @@
   "scripts": {
     "test": "!test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saajith22/helper-boy"
+  },
   "author": "saajith",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saajith22/helper-boy/issues"
+  },
+  "homepage": "https://github.com/Saajith22/helper-boy/blob/main/README.md"
   "dependencies": {
     "discord.js": "^12.5.3",
     "mongoose": "^5.12.9"
