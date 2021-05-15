@@ -5,25 +5,27 @@ It's a must use package for discord.js users!!
 
 CODE EXAMPLES =>
 
-## /* Embed */
+## Embed
 
 ```js
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { embed  } = require('helper-boy');
+const { helper } = require('helper-boy');
 client.on('message', async(message) => {
-    const e = embed('Title', 'Description', 'BLUE');
+    const e = helper.embed('Title', 'Description', 'BLUE');
     if(message.content === '!test') {
        message.channel.send(e);
     }
 })
 ```
 
-## /* Mongo */
+## Mongo
 ```js
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { Mongo } = require('helper-boy');
+const { helper } = require('helper-boy');
 
-Mongo('mongodb-uri');
+helper.Mongodb('mongodb-uri');
 ```
+
+###### Github => https://github.com/Saajith22/helper-boy/tree/main

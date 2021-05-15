@@ -1,6 +1,6 @@
 {
   "name": "helper-boy",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "A really useful discord.js package for all users and all purposes",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Saajith22/helper-boy/issues"
   },
-  "homepage": "https://github.com/Saajith22/helper-boy/blob/main/README.md"
+  "homepage": "https://github.com/Saajith22/helper-boy/blob/main/README.md",
   "dependencies": {
     "discord.js": "^12.5.3",
     "mongoose": "^5.12.9"

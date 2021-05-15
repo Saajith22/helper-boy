@@ -1,8 +1,8 @@
-const { MessageEmbed } = require('discord.js');
-const { connect } = require('mongoose');
+const discord = require('discord.js');
+const mongoose = require('mongoose');
 
 async function embed(title, description, color) {
-    const e = new MessageEmbed()
+    const e = new discord.MessageEmbed()
         .setTitle(title)
         .setDescription(description)
         .setColor(color)
@@ -18,20 +18,23 @@ async function Mongodb(uri, {
     if (typeof uri !== 'string') return console.log('Invalid MongoDB uri provided! (Not a String) -- [Helper Boy]')
 
     if (modify === true) {
-        connect(uri, {
+        console.log('success')
+        mongoose.connect(uri, {
             useFindAndModify: false,
             useNewUrlParser: true,
             useUnifiedTopology: true
-        })
+        }).catch(e => console.error(`An error Occured [ Helper Boy ] -  ${e}`))
     } else {
-        connect(uri, {
+        mongoose.connect(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true
-        })
+        }).catch(e => console.error(`An error Occured [ Helper Boy ] -  ${e}`))
     }
 }
 
-module.exports = {
-    embed,
+const helper = {
+    embed, 
     Mongodb
 }
+
+module.exports = helper;
